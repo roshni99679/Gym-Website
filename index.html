@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gym website</title>
+
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /*CSS reset*/
+    body{
+        margin: 0px;
+        padding: 0px;
+        background: url('img/bg.jpg.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+    }
+    .left{
+        color: white;
+        /* border: 2px solid white; */
+        display: inline-block;   
+        position: absolute;
+        top: 20px;
+        left: 34px;
+        width: min-content;
+        text-align: center;
+        font-size: 20px;
+    }
+    .left img{
+        width: 60px;
+        filter: invert(100%);
+    }
+    .middle{
+        color: white;
+        /* border: 2px solid white; */
+        display: block;
+        width: 43%;
+        margin: 20px auto;  
+    }
+    .right{
+        color: white;
+        position: absolute;
+        top: 20px;
+        right: 34px;
+        /* border: 2px solid white; */
+        display: inline-block;
+    }
+    .navbar{
+        display: inline-block;
+
+    }
+    .navbar li{
+        display: inline-block;
+      
+    }
+    .navbar li a{
+        display: inline-block;
+        color: wheat;
+        text-decoration: none;
+        padding: 16px;
+        font-size: 20px;
+      
+    }
+    .navbar li a:hover,.navbar li a.active{
+        color: rgb(245, 213, 73);
+        text-decoration: underline;
+        
+    }
+    .bt{
+        margin: 0px 10px;
+        padding: 3px;
+        border: 1px solid wheat;
+        border-radius: 3px;
+        background-color: rgb(8, 8, 8);
+        color: rgb(248, 241, 241);
+        font-size: 10pxpx;
+        cursor: pointer;
+    }
+    .bt:hover{
+        color: tomato;
+    }
+    .offer{
+        border: 1px solid white;
+        border-radius: 4px;
+        margin: 80px 500px;
+        padding: 5px;
+        width: 20%;
+        color: whitesmoke;
+        text-align: center;
+        font-size: 15px;
+
+    }
+    .form-group{
+        text-align: center;
+        display: block;
+        width: 20px;
+        margin: 20px 45px;
+        
+       
+    }
+    .form-group ::placeholder{
+        text-align: center;
+       
+    }
+
+</style>
+<body>
+    <header>
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/logo.jpg.jpg" alt="">
+            FitnessFreak
+
+
+        </div>
+        <!-- mid box of navbar -->
+        <div class="middle">
+            <ul class="navbar">
+                <li><a href="">home</a></li>
+                <li><a href="">About us</a></li>
+                <li><a href="">Contact us</a></li>
+                <li><a href="">Fitness calculator</a></li>
+            </ul>
+            
+
+
+        </div>
+        <!-- right box of navbar -->
+        <div class="right">
+            <button class="bt">Call us</button>
+            <button class="bt">Email us</button>
+
+
+        </div>
+    </header>
+    <div class="offer">
+        <h1>Join The Best GYM In Mumbai</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="number" placeholder="Your Mobile No.">
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Enter Your Email">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter Your City">
+            </div>
+            <button class="bt"> Submit</button>
+        
+        </form>
+
+
+    </div>
+    
+</body>
+</html>
